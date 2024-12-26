@@ -1,0 +1,626 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+    height: 70px;
+    background-color:rgb(170, 227, 170) ;
+}
+
+p{
+    display : inline-block ;
+    margin-left : 25px ;
+}
+
+p:hover{
+    cursor : pointer ;
+    color : green ;
+    opacity : 0.6 ;
+}
+.heading{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+    margin-left: 100px;
+    padding-top: 15px;
+    display: inline-block;
+}
+body{
+    background-color: aliceblue;
+}
+.header ul{
+    display: inline;
+    margin-left: 500px;
+    text-decoration: none;
+}
+.header ul li{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+.header h1 a{
+    text-decoration: none;
+    color: black;
+    
+}
+.header ul li a:hover{
+    color: rgb(100, 152, 100);
+    transform: scale(1.07);
+    
+    
+}
+.header ul li a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin-left: 100px;
+    margin-top: 50px;
+    row-gap: 50px;
+}
+.img1{
+    height: 350px;
+    width: 250px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    transform:scale(1);
+    transition: 0.5s;
+}
+.img1 img{
+    object-fit: contain;
+    object-position: center;
+    width: 90%;
+    height: 190px;
+    
+}
+.img1:hover{
+    transform: scale(1.07);
+}
+
+.trending{
+    margin-left: 100px;
+    margin-top: 35px;
+    color: rgba(103, 91, 91, 0.499);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+.name{
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+
+}
+.price{
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+    
+
+}
+.quantity{
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: gray;
+
+}
+.btn1{
+    object-fit: contain;
+    object-position: center;
+    width: 90%;
+    height: 30px;
+    background-color:rgb(95, 177, 95);
+    transition: 0.25s ease-out;
+    border: none;
+    margin-left: 12px;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: rgb(55, 173, 55);
+}
+.trending img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+.line2{
+    display: inline-block;
+    object-fit:contain;
+    font-size: 50px;
+}
+.zero,.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten{
+    color: green;
+    margin-top: 5px;
+    margin-left: 13px;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.contactus{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    color: black;
+}
+.logopart{
+    flex-basis: 40%;
+    
+}
+.categories{
+    flex-basis: 30%;
+}
+
+.cart{
+    display : none ;
+}
+
+.popup-overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+    position: fixed; /* Fix the overlay position relative to the viewport */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    width: 100%; /* Cover the entire width of the viewport */
+    height: 100%; /* Cover the entire height of the viewport */
+    z-index: 1000; /* Ensure it's on top of other content */
+    display: none; /* Hide it initially */
+    justify-content: center; /* Center the popup-box horizontally */
+    align-items: center; /* Center the popup-box vertically */
+}
+
+.popup-box {
+    background-color: green;
+    width: 40%;
+    padding: 40px;
+    margin : 150px ;
+    margin-left :350px ;
+    border-radius: 10px;
+    z-index: 1001; /* Ensure it's on top of the overlay */
+}
+
+
+.product_name_head{
+    font-family: "Montserrat","sans-serif";
+    font-style: normal;
+    font-weight: 400 ;
+}
+
+.display{
+    border : 2px solid black ;
+    box-shadow: 0px 0px 30px 6px green;
+    display : inline-block ;
+    display : none ;
+    margin-left : 15px ;
+}
+#carItem p{
+    font-family: "Montserrat","sans-serif";
+    font-style: normal;
+    font-weight: 400 ;
+}
+#product_input{
+    border :none ;
+    background : transparent ;
+    width :100% ;
+    margin :6px ;
+    padding :6px ;
+    font-size :20px ;
+    border-bottom : 2px solid black ;
+}
+
+#cost_input{
+    border :none ;
+    background : transparent ;
+    width :100% ;
+    margin :6px ;
+    padding :6px ;
+    font-size :20px ;
+    border-bottom : 2px solid black ;
+}
+
+#quantity_input{
+    border : none;
+    margin :6px ;
+    padding:6px;
+    background : transparent ;
+    border-bottom : 2px solid black ;
+    font-size : 20px ;
+    width : 100% ;
+}
+
+#image_input{
+    border : none ;
+    background : transparent ;
+    width : 100% ;
+    margin : 6px ;
+    padding : 6px ;
+    font-size : 20px ;
+    border-bottom : 2px black solid ;
+}
+
+.popup-box input::placeholder{
+    color :black ;
+
+}
+
+.popup-box button{
+    background-color :black ;
+    color :white ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin : 6px ;
+}
+
+.popup-box input:focus{
+    outline :none ;
+}
+
+.text{
+    margin-left:15%;
+}
+
+.close_img{
+    display:flex ;
+    flex-wrap: nowrap;
+    background : transparent;
+}
+.add,.close_portal,.close{
+    margin :10px ;
+    padding : 15px;
+    border :none ;
+    margin-left: 100px;
+    font-family: "Montserrat","sans-serif";
+    font-style: normal;
+    font-weight: 400 ;
+
+}
+.text1{
+    font-family: "Montserrat","sans-serif";
+    font-style: normal;
+    font-weight: 800 ;
+    color: gray;
+    font-size: 35px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.add{
+    margin : 25px;
+    margin-left : 110px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transform: scaleX(1.1);
+    transition: 0.25s;
+    background-color: rgb(122, 162, 122);
+}
+
+.close{
+    margin : 25px;
+    margin-left : 166px ;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transform: scaleX(1.1);
+    transition: 0.25s;
+    background-color: rgb(122, 162, 122);
+}
+.add:hover{
+    transform : scale(1.3) ;
+    background-color: rgb(98, 179, 98);
+    transition: 0.25s;
+}
+
+.close:hover{
+    transform : scale(1.3) ;
+    background-color: rgb(98, 179, 98);
+    transition: 0.25s;
+}
+
+.contact{
+    flex-basis: 25%;
+}
+.logoone{
+    margin-top: 30px;
+    margin-left: 100px;
+    height: 80px;
+    width: 300px;
+    display: block;
+}
+.insta1{
+    height: 35px;
+    width: 35px;
+    margin-left: 103px;
+    margin-top: 20px;
+    margin-right: 10px;
+    transform: scale(1);
+   transition: 0.25s;
+   cursor: pointer;
+}
+.insta1:hover,.insta2:hover{
+    transform: scale(1.07)
+}
+.insta2{
+    height: 35px;
+    width: 35px;
+    transform: scale(1);
+   transition: 0.25s;
+   cursor: pointer;
+}
+.categories h2{
+    margin-left: 30px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+}
+.categories ul{
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    color: gray;
+    list-style: none;
+}
+.contact h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.contact h2{
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    font-size: 20px;
+}
+.light{
+    font-weight: 400;
+}
+.green{
+    color: green;
+}
+.maincart{
+    margin-left: 30%;
+    height: 300px;
+    width: 600px;
+    border: 3px solid black;
+    margin-bottom: 100px;
+}
+.loginsignup{
+    
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 150px;
+}
+.icon-cart button {
+    background-color:rgb(170, 227, 170);
+    color: black;
+    border-radius: 50%;
+    padding:6px;
+    font-size: 20px;
+    border: none;
+    cursor:pointer;
+    margin-top: 2px;
+}
+
+
+.cont {
+    display:none;
+    width: 60%;
+    margin-bottom: 31px;
+    position: fixed;
+    top: 10%;
+    left: 72.8%;
+    opacity: 0.9;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+   
+}
+
+#root {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.sidebar {
+    width: 40%;
+    border-radius: 15px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.head {
+    background-color: rgb(95, 177, 95);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    border-radius: 3px;
+    margin: 10px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+}
+
+.row-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgb(95, 177, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clobutton{
+    color:black;
+    border-radius:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-right:13px;
+    padding-left:13px;
+    border:1px solid black;
+    margin-top:0px;
+    margin-left:230px;
+    cursor: pointer;
+    transition: 0.25s;
+    transform: scale(1);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+}
+.clobutton:hover{
+    background-color:rgb(95, 177, 95) ;
+    transform: scale(1.1);
+}
+
+.rowimg {
+    max-width: 43px;
+
+}
+.btt{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    padding: 7px;
+    transition: 0.250s;
+}
+.btt:hover{
+    background-color: rgb(95, 177, 95);
+    transition: 0.250s;
+}
+
+.section{
+    box-sizing: content-box;
+    border: 2px solid black;
+    margin :6px ;
+    margin-bottom: 20px ;
+    background :linear-gradient(to bottom,rgb(136, 174, 136),#6fea6f) ;
+}
+.paragraph{
+    color : black;
+}
+
+.paragraph:hover{
+    color : black ;
+}
+
+.creators{
+    margin-top : 25px ;
+    display:flex ;
+    flex-wrap: nowrap;
+    margin-bottom : 30px ;
+}
+.creator{
+    box-sizing: border-box;
+    border :2px solid black ;
+    border-radius :20px ;
+    margin : 10px ;
+    padding:5px;
+    width :450px ;
+    margin-left : 60px ;
+}
+
+.creator:hover{
+    transform: scale(1.06);
+    transition :0.25s ;
+}
+
+.creator1{
+    box-sizing: border-box;
+    border :2px solid black ;
+    border-radius :20px ;
+    margin : 10px ;
+    padding:5px;
+    width :450px ;
+    margin-left : 60px ;
+}
+
+.creator1:hover{
+    transform: scale(1.06);
+    transition :0.25s ;
+}
+
+.cr_image{
+    margin-left : 30px;
+    border-radius: 20px ;
+}
+.role{
+    margin-top:10px ;
+    text-align : center ;
+    color :grey ;
+}
+.down_contact{
+    margin-top:5px;
+    text-align : center ;
+    font-size: larger;
+}
+
+

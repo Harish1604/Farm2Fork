@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm2Fork | Online Groceries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="showCart">
+    <div class="mainone">
+        <div class="header">
+            <h1 class="heading"><a href="index.html">Farm<span class="green">2</span>Fork</a></h1>
+            <ul class="unorder">
+                
+                <li class="icon-cart">
+                    <button class="open-cart" onclick="disp(event)">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                        </svg>
+                    </button>
+                </li>
+                <li><p class="farmer_portal_access">Farmer's Portal</p></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+  
+    <div class="trending">
+        <img src="images/trending.png" alt="">
+        <h1 class="line2">Products on <span style="color:orange">Sale</span> <img src="images/trending.png" alt=""> </h1>
+    </div>
+  
+    <div class="container">
+        <div class="img1">
+            <img src="images/milk.png" alt="">
+            <h2 class="name">Milk</h2>
+            <h5 class="quantity">1 Litre </h5> <br>
+            <h3 class="price">₹30</h3>
+            <button class="btn1" onclick="message(0)">Add to Cart</button>
+            <p class="zero"></p>
+        </div>
+  
+        <div class="img1">
+            <img src="images/wheat.png" alt="">
+            <h2 class="name">Wheat</h2>
+            <h5 class="quantity">1 Kg </h5> <br>
+            <h3 class="price">₹30</h3>
+            <button class="btn1" onclick="message(1)">Add to Cart</button>
+            <p class="one"></p>
+        </div>
+  
+        <div class="img1">
+            <img src="images/rice.png" alt="">
+            <h2 class="name">Rice</h2>
+            <h5 class="quantity">10 Kg </h5> <br>
+            <h3 class="price">₹500</h3>
+            <button class="btn1" onclick="message(2)">Add to Cart</button>
+            <p class="two"></p>
+        </div>
+  
+        <div class="img1"><img src="images/coconut.png" alt="">
+          <h2 class="name">Coconut</h2>
+          <h5 class="quantity">1 Piece </h5> <br>
+          <h3 class="price">₹20</h3>
+          <button class="btn1" onclick="message(3)">Add to Cart</button>
+          <p class="three"></p>
+      </div>
+  
+      <div class="img1"><img src="images/coconut oil.png" alt="">
+          <h2 class="name">Coconut Oil</h2>
+          <h5 class="quantity">250 ml </h5> <br>
+          <h3 class="price">₹50</h3>
+          <button class="btn1" onclick="message(4)">Add to Cart</button>
+          <p class="four"></p>
+      </div>
+  
+      <div class="img1"><img src="images/Sugarcane.png" alt="">
+          <h2 class="name">Sugarcane</h2>
+          <h5 class="quantity">2 Piece </h5> <br>
+          <h3 class="price">₹50</h3>
+          <button class="btn1" onclick="message(5)">Add to Cart</button>
+          <p class="five"></p>
+      </div>
+  
+      <div class="img1"><img src="images/Cane juice.png" alt="">
+          <h2 class="name">Cane Juice</h2>
+          <h5 class="quantity">1L </h5> <br>
+          <h3 class="price">₹70</h3>
+          <button class="btn1" onclick="message(6)">Add to Cart</button>
+          <p class="six"></p>
+      </div>
+  
+      <div class="img1"><img src="images/Drumstick.png" alt="">
+          <h2 class="name">Drumstick</h2>
+          <h5 class="quantity">3 Piece</h5> <br>
+          <h3 class="price">₹50</h3>
+          <button class="btn1" onclick="message(7)">Add to Cart</button>
+          <p class="seven"></p>
+      </div>
+  
+      <div class="img1"><img src="images/ginger.png" alt="">
+          <h2 class="name">Ginger</h2>
+          <h5 class="quantity">100g </h5> <br>
+          <h3 class="price">₹50</h3>
+          <button class="btn1" onclick="message(8)">Add to Cart</button>
+          <p class="eight"></p>
+      </div>
+  
+      <div class="img1"><img src="images/tomato.png" alt="">
+          <h2 class="name">tomato</h2>
+          <h5 class="quantity">1 Kg </h5> <br>
+          <h3 class="price">₹50</h3>
+          <button class="btn1" onclick="message(9)">Add to Cart</button>
+          <p class="nine"></p>
+      </div>
+  
+      <div class="img1"><img src="images/pumpkin.png" alt="">
+          <h2 class="name">Pumpkin</h2>
+          <h5 class="quantity">1 Piece </h5> <br>
+          <h3 class="price">₹30</h3>
+          <button class="btn1" onclick="message(10)">Add to Cart</button>
+          <p class="ten"></p>
+      </div>
+  </div>
+    </div>
+  
+    
+  
+    <div class="cont">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="carItem"><p>Your cart is empty</p></div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">₹0.00</h2>
+            </div>
+            <button id="cancel-popup" class="clobutton" onclick="closebutton(event)">Close</button>
+        </div>
+    </div>
+  
+    <div class="popup-overlay">
+      <div class="popup-box">
+        <h2>Enter Product Details</h2>
+        <form>
+          <input type="text" placeholder="product name" id="product_input" />
+          <br />
+          <input
+            type="file"
+            accept="image/*"
+            placeholder="Select the image of your product"
+            id="image_input"
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Product quantity"
+            id="quantity_input"
+          />
+          <input type="text" placeholder="cost" id="cost_input" />
+          <button id="add_product">ADD</button>
+          <button id="cancel_product">CANCEL</button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="cart">
+      <br />
+      <br />
+      <div class="maincart">
+        <h2 class="text1">Add your products here ...</h2>
+        <button class="add">Add</button>
+        <button class="close">Close</button>
+      </div>
+<script src="script_index_farmer.js"></script>
+  </body>
+</html>
